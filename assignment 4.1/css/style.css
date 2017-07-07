@@ -1,0 +1,376 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 108px;
+    font-family: monospace;
+    background: url("http://i.imgur.com/Rm2NpV2.jpg") no-repeat;
+    margin: 0;
+    background-size: cover;
+}
+
+main,
+footer {
+    color: #fff;
+}
+
+main p {
+    padding: 0 8px 0 8px;
+}
+
+main article {
+    padding: 0 0 80px 0;
+    /*
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.75);
+*/
+    position: relative;
+    z-index: 2;
+}
+
+
+/*Header and Navigation styles--------------------------------------------------------------*/
+
+nav h2 {
+    display: none;
+}
+
+header nav {
+    list-style: none;
+    display: inline-block;
+}
+
+header nav li {
+    float: left;
+    position: relative;
+}
+
+header nav li a {
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+body>header {
+    margin-bottom: 40px;
+    padding: 0 8px 0 8px;
+}
+
+header li a h4 {
+    padding-right: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3598db;
+    font-size: 15px;
+}
+
+header h1 {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    color: #35D8F9;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #172679;
+    text-transform: uppercase;
+    vertical-align: sub;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    top: 0;
+    z-index: 3;
+}
+
+.container {
+    position: relative;
+}
+
+
+/*----Clearfix---------------------------------------------------------------------------------*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*main body Styles-----------------------------------------------------------------------------*/
+
+p {
+    font-size: 17px;
+}
+
+
+/*---------------------About us div styles-----------------------------------------------------*/
+
+#aboutUs {
+    margin: 90px 0;
+}
+
+
+/*--------------------Aside section styles-----------------------------------------------------*/
+
+aside {
+    height: 500px;
+    width: 100%;
+    overflow: scroll;
+    font-size: 2em;
+    background: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+aside h2,
+figcaption {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+
+figure {
+    margin: 0;
+}
+
+
+/*=============================================Dropdown CSS==========================================*/
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #3598db;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    position: relative;
+    right: 8px;
+}
+
+#social {
+    display: inline-block;
+    padding-right: 0;
+    margin-right: 4px;
+}
+
+a ul {
+    position: absolute;
+    display: none;
+    width: 135px;
+    top: 48px;
+}
+
+a ul li {
+    float: none;
+    background-color: #ffffff;
+    padding: 10px;
+    color: #3598db;
+    font-size: 13px;
+    border-bottom: 1px solid #eaf8ff;
+}
+
+a ul li:last-child {
+    border: none;
+}
+
+li:hover ul {
+    display: block;
+    border: 1px solid #35D8F9;
+}
+
+a ul li:hover {
+    background-color: #35D8F9;
+    color: white;
+}
+
+
+/*===========================Form styles===============================*/
+
+section h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0 10px 0;
+}
+
+form {
+    background: url("http://wallpapercave.com/wp/hpehPUv.jpg") no-repeat;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-size: cover;
+    background-color: darkblue;
+}
+
+.form-container {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+section input {
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 0 1px #3598DB;
+    box-shadow: 0 0 0 1px #3598DB;
+    height: 22px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    padding-left: 4px;
+}
+
+section input:focus {
+    -webkit-box-shadow: inset -3px -4px 5px -3px rgba(0, 0, 0, 0.30), 0 0 0 1px #3598DB;
+    box-shadow: inset -3px -4px 5px -3px rgba(0, 0, 0, 0.30), 0 0 0 1px #3598DB;
+    outline: none;
+    border: none;
+}
+
+section label {
+    text-transform: uppercase;
+    position: absolute;
+    line-height: 22px;
+    margin-left: 8px;
+}
+
+section {
+    position: relative;
+    margin: 15px 0 15px 0;
+}
+
+section div {
+    margin-top: 15px;
+}
+
+section h3,
+section>h2 {
+    display: none;
+}
+
+.radio-box {
+    text-align: center;
+}
+
+.radio-box section {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.radio-box section label {
+    position: relative;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+.radio-box section input[type="radio"] {
+    display: inline-block;
+    padding: 0;
+    vertical-align: middle;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type="checkbox"] {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+input[type="checkbox"]:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#checkbox1 {
+    float: left;
+}
+
+#checkbox2 {
+    float: right;
+}
+
+#checkbox1 label,
+#checkbox2 label {
+    position: relative;
+    vertical-align: middle;
+}
+
+.checkbox-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-top: 40px;
+}
+
+input[type="number"] {
+    width: 38.5%;
+    padding-left: 10px;
+}
+
+section button {
+    border-radius: 4px;
+    border: 2px solid #888888;
+    background: transparent;
+    color: #888888;
+    width: 150px;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+section button:hover {
+    color: #ffffff;
+    border: 2px solid #3598DB;
+}
+
+section button[disabled]:hover {
+    border-radius: 4px;
+    border: 2px solid #888888;
+    color: #888888;
+}
+
+#submit-form {
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.column-layout {
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
+    word-break: break-all;
+    text-align: justify;
+    color: rgba(204, 204, 204, 0.5);
+}
+
+div p .dropcap {
+    font-size: 4em;
+    float: left;
+    padding: 0 3px 0 0;
+    line-height: 56px;
+}
+
+div p {
+    margin: 0px;
+}
+
+.column-layout:hover {
+    color: rgba(255,255,255,1);
+}
